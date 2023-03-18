@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Razorapay</title>
     <link rel="stylesheet" href="./main.css">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
 
@@ -133,7 +134,8 @@
     <!-- shape part -->
     <div class="w-[103%]  absolute left-0  -right-0  mt-[0]">
       <img src="./images/hero-shape.svg" alt=""
-    class="w-full object-fill">
+      class="w-full object-fill">
+
     </div>
     
   
@@ -141,73 +143,99 @@
 
     </section> 
   </div>
+  
 
-  <!-- feature section -->
-  <section class="relative mt-[190px] overflow-hidden">
-    <img src="./images/feature-section1-dottedrows.png" alt="" loading="lazy" 
-    width="233"
-    height="167"
-    class="absolute -top-[8rem] left-[10rem]" >
+ <!-- feature section -->
+
+  <section class="relative mt-[180px] overflow-hidden">
     <img src="./images/feature-section1-dottedrows.png" alt="" loading="lazy"
     width="233"
     height="167"
-    class="absolute top-[3rem] right-0 inline-block">
+    class="absolute -top-[8rem] left-[3rem] inline-block -z-10">
 
-    <div>
+    <img src="./images/feature-section1-dottedrows.png" alt="" loading="lazy"
+    width="233"
+    height="167"
+    class="absolute top-[0rem] right-0 inline-block rotate-180">
 
+    <div class="relative w-11/12 max-[1000px] mx-auto pt-4">
       <!-- heading -->
-      <h2>Accept Payments with Razorpay Payments Suite</h2>
-      <div></div>
+      <h2 class="font-mullish text-center text-2xl leading-[1.3] font-extrabold">Accept Payments with Razorpay Payment Suite</h2>
+      <div class="w-6 h-1 bg-greenLight mx-auto mt-5 mb-12"></div>
 
+      <!-- content -->
+      <div class="w-full min-h-[520px] bg-white flex rounded-md relative p-15 py-12 border">
+        <!-- left section -->
+        <div class="flex flex-col justify-between w-full">
+          <h3 class="font-mullish text-[28px] leading-10 font-bold max-w-[500px]"> Supercharge your business with the all‑powerful
+            <span class="text-LightBlue300">Payment Gateway</span>
+          </h3>
+          <ul class="space-y-2 ">
+            <li class="font-mullish flex iteam-center space-x-2">
+              <i data-feather="check" class="text-greenLight"></i>
+              <span>100+ Payment Methods</span>
+            </li>
+            <li>
+              <i data-feather="check" class="text-greenLight"></i>
+              <span> Industry Leading Success Rate </span>
+            </li>
+            <li>
+              <i data-feather="check" class="text-greenLight"></i>
+              <span> Superior Checkout Experience </span>
+            </li>
+            <li>
+              <i data-feather="check" class="text-greenLight"></i>
+              <span> Easy to Integrate </span>
+            </li>
+            <li>
+              <i data-feather="check" class="text-greenLight"></i>
+              <span> Instant Settlements from day 1 </span>
+            </li>
+            <li>
+              <i data-feather="check" class="text-greenLight"></i>
+              <span> In-depth Reporting and Insights </span>
+            </li>
+          </ul>
 
-      <!-- content-box -->
-      <div>
-        <!-- left sectiion -->
-        <h3>
-          Supercharge youe business with the all -powerful
-          <span class="text-LightBlue300">Payments Gateway</span>
-        </h3>
-        <ul>
-          <li>
-            <span>100+ Payments Methods</span>
-          </li>
-          <li>
-            <span>Industry Leading Success Rate</span>
-          </li>
-          <li>
-            <span>Superior Checkout Experience</span>
-          </li>
-          <li>
-            <span> Easy to Integrate</span>
-          </li>
-          <li>
-            <span> Instant Settlements from day 1</span>
-          </li>
-          <li>
-            <span>In-depth Reporting and Insights</span>
-          </li>
-        </ul>
-        
-        <!-- for button and hyperlink -->
-        <div>
-           <button></button>
-
+         <!-- for button and hyperlink -->
+         <div class="flex flex-row iteam-center space-x-4">
+           <button
+           class="bg-LightBlue300 w-fit text-white py-[14px] px-[18px] rounded-md 
+           font-mullish font-bold hover:bg-LightBlue500 transition-all duration-200">
+            Sign Up Now
+           </button>
            <!-- hyperlink -->
-           <div>
-            <a href=""></a>
-            <i></i>
-           </div>
+            <div class="flex items-center cursor-pointer group">
+              <a href="#"
+              class="font-mullish font-bold text-LightBlue500 
+              group-hover:text-grayBlue transition-all duration-200"
+              >Know More
+              </a>
+              <i
+              data-feather="chevron-right"
+              class="w-5 h-5 text-LightBlue500  
+               group-hover:text-grayBlue transition-all duration-200"></i>
+            </div>
+
+          </div>
+
+          <img src="/images/payment-suite.png" alt=""
+          class="max-w-[550px] absolute right-0 bottom-0">
+
         </div>
-        <img src="./images/payment-suite.png" alt="">
       </div>
 
     </div>
-
-
-  </section>
   
+  
+  </section>
 
-     
+
+
+ 
+  <script>
+    feather.repalce()
+  </script>
     
 </body>
 </html>
