@@ -13,6 +13,20 @@
         padding-top: 12rem;
         padding-bottom: 12rem;
       }
+      .companiesList{
+        animation: 10s infinite linear moveCompany;
+      }
+
+      @keyframes moveCompany { 
+        0%{
+          top:0%;
+        }
+        100%{
+          top:-50%;
+        }
+                        
+      }
+      
 
     </style>
     
@@ -1114,7 +1128,7 @@
 <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[200px] -z-[100]">
   <!-- z- index for blue down  -->
 
-  <div class=" w-11/12 relative max-w-[1080px] mx-auto ">
+  <div class="flex flex-row w-11/12 relative max-w-[1080px] mx-auto ">
     <!-- left part -->
     <div class="flex flex-col justify-center max-w-[calc(100%-500px)]">
       <h2 
@@ -1126,9 +1140,21 @@
     </div>
 
     <!-- right part -->
-    <div>
-      <img src="./images/comanies.png" alt=""
-      class="">
+    <div class="h-[500px] w-[500px] relative overflow-y-hidden">
+      <div style="background: linear-gradient(180deg,#f4f8ff,#fff0)"
+      class="absolute w-full h-[150px] top-0 z-50">
+
+      </div>
+
+      <img src="./images/comanies.png" alt="" 
+      class="absolute  h-auto  object-cover companiesList ">
+
+
+     <div  style="background: linear-gradient(0deg,#f4f8ff,#fff0)"
+     class="absolute w-full h-[150px] bottom-0 z-50">
+
+
+     </div>
     </div>
 
   </div>
